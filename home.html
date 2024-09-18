@@ -30,22 +30,47 @@
                     </div>
 
                     <!-- add money form -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-12">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-12">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text font-bold">Amount to Add</span>
                                 </label>
-                                <input type="text" placeholder="Add Amount to withdraw" id="add-amount-money" class="input input-bordered" required />
+                                <input type="text" placeholder="Add Amount to withdraw" id="add-amount-money"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text font-bold">Pin Number</span>
                                 </label>
-                                <input id="add-money-pin-number" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                                <input id="add-money-pin-number" type="password" placeholder="Enter 4 digit pin number"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control mt-6">
                                 <button id="add-money-button" class="btn btn-primary font-bold">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- cash-out money form -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-12">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Enter amount to withdraw</span>
+                                </label>
+                                <input type="text" placeholder="Add Amount to withdraw" id="cash-out-amount-money"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Pin Number</span>
+                                </label>
+                                <input id="cash-out-money-pin-number" type="password" placeholder="Enter 4 digit pin number"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="cash-out-money-button" class="btn btn-primary font-bold">Withdraw Money</button>
                             </div>
                         </form>
                     </div>
@@ -55,6 +80,7 @@
     </main>
 
     <script src="./js/add.js"></script>
+    <script src="./js/cashout.js"></script>
 </body>
 
 </html>
