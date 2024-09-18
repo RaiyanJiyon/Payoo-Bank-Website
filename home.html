@@ -15,23 +15,46 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-1">
+                <div class="artboard artboard-demo phone-3">
                     <!-- balance box  -->
                     <div class="stats shadow">
                         <div class="stat">
-                            <div class="stat-value">$<span id="amount">45000</span></div>
+                            <div class="stat-value">$<span id="total-amount">45000</span></div>
                             <div class="stat-title">Available Balance</div>
                         </div>
                     </div>
                     <!-- Add money and cash out buttons -->
                     <div class="flex justify-between gap-10 mt-12">
-                        <button id="add-money-button" class="btn btn-lg">Add Money</button>
-                        <button id="cash-out-money-button" class="btn btn-lg">Cash Out</button>
+                        <button id="" class="btn btn-lg">Add Money</button>
+                        <button id="" class="btn btn-lg">Cash Out</button>
+                    </div>
+
+                    <!-- add money form -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-12">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Amount to Add</span>
+                                </label>
+                                <input type="text" placeholder="Add Amount to withdraw" id="add-amount-money" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Pin Number</span>
+                                </label>
+                                <input id="add-money-pin-number" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="add-money-button" class="btn btn-primary font-bold">Add Money</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./js/add.js"></script>
 </body>
 
 </html>
