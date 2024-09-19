@@ -12,5 +12,11 @@ document.getElementById('add-money-button')
         } else {
             const newTotalAmount = totalAmount + addAmount;
             document.getElementById('total-amount').innerText = newTotalAmount;
+            
+            const transaction = document.getElementById('transaction');
+            let p = document.createElement('p');
+            p.innerText = `Added: ${addAmount} Tk. New Balance: ${newTotalAmount}`;
+            p.style.color = 'green';
+            transaction.appendChild(p);
         };
     });

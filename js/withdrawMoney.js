@@ -12,5 +12,11 @@ document.getElementById('cash-out-money-button')
         } else {
             const newTotalAmount = totalAmount - withdrawAmount;
             document.getElementById('total-amount').innerText = newTotalAmount;
+
+            const transaction = document.getElementById('transaction');
+            let p = document.createElement('p');
+            p.innerText = `Withdraw: ${withdrawAmount} Tk. New Balance: ${newTotalAmount}`;
+            p.style.color = 'red';
+            transaction.appendChild(p);
         };
     });

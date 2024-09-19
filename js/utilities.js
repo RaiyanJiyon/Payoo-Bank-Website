@@ -9,3 +9,4 @@ function getTextFieldValueById(id) {
     const inputValueNumber = Number(inputValue);
     return inputValueNumber;
 }
+
