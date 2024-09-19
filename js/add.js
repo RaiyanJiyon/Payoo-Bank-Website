@@ -6,10 +6,8 @@ document.getElementById('add-money-button')
         if (addMoneyPin === '1234') {
             let totalAmountElement = document.getElementById('total-amount');
             let totalAmountNumber = Number(totalAmountElement.textContent);
-            console.log(totalAmountElement);
             const addMoney = document.getElementById('add-amount-money').value;
             const addMoneyNumber = Number(addMoney);
-            console.log(addMoney);
             totalAmountNumber = totalAmountNumber + addMoneyNumber;
             totalAmountElement.textContent = totalAmountNumber;
         } else {
