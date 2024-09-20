@@ -8,10 +8,64 @@
     <!-- Daisy-UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    
+    <main class="w-11/12 mx-auto mt-10">
+        <section class="flex justify-between items-center">
+            <!-- total amount -->
+            <div class="stats shadow border border-black">
+                <div class="stat">
+                    <div class="stat-value text-lg">$<span id="count-money">45000</span></div>
+                    <div class="stat-title text-base">Available Balance</div>
+                </div>
+            </div>
+            <!-- logout button -->
+            <button class="btn bg-[#0808081A] border border-[#dfdfe1]">Log Out</button>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- content section -->
+        <section>
+            <h1 class="text-2xl font-bold">
+                🔥 Welcome to Payooo!
+            </h1>
+            <p class="text-sm md:text-base text-[#08080880] font-normal mt-3">
+                Enjoy easy and convenient financial services with us. Cashout charge is low and 
+            </p>
+        </section>
+
+        <!-- functionality buttons section -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 rounded-b-3xl">
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-credit-card"></i>
+                Add Money
+            </button>
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-sack-dollar"></i>
+                CashOut
+            </button>
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-money-bill"></i>
+                Transfer Money
+            </button>
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-sack-dollar"></i>
+                Get Bonus
+            </button>
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-wallet"></i>
+                Pay Bill
+            </button>
+            <button class="btn py-10 border border-[#dfdfe1] bg-white text-[#080808B3]">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                Transactions
+            </button>
+        </div>
+    </main>
 </body>
 
 </html>
