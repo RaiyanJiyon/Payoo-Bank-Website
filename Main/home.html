@@ -73,17 +73,21 @@
     <!-- functionalities form section -->
     <section class="bg-[#f4f5f7] mt-10 p-10">
         <!-- add money form -->
-        <div>
+        <div class="hidden">
             <h2 class="text-lg font-bold">Add Money</h2>
             <!-- form -->
-            <div class="card bg-base-100 w-full  shrink-0 shadow-2xl rounded-3xl mt-4">
+            <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
                 <form class="card-body">
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text font-bold">Select A Bank</span>
                         </label>
-                        <input type="text" placeholder="Select back"
-                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                        <select class="input input-bordered bg-[#F4F5F7] rounded-[32px]" required>
+                            <option value="" disabled selected>Select a bank</option>
+                            <option value="bank1">Bank 1</option>
+                            <option value="bank2">Bank 2</option>
+                            <option value="bank3">Bank 3</option>
+                        </select>
                     </div>
                     <div class="form-control">
                         <label class="label">
@@ -109,6 +113,41 @@
                     <div class="form-control mt-6">
                         <button id="add-money-btn"
                             class="btn bg-[#0874F2] text-white rounded-[32px] font-bold text-lg">Add Money</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- withdraw money form -->
+        <div class="">
+            <h2 class="text-lg font-bold">Cash Out</h2>
+            <!-- form -->
+            <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Agent Number</span>
+                        </label>
+                        <input type="text" placeholder="Enter 11 digit number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Amount</span>
+                        </label>
+                        <input id="input-amount-number" type="text" placeholder="Enter amount to withdraw"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin Number</span>
+                        </label>
+                        <input id="withdraw-pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="withdraw-money-btn"
+                            class="btn bg-[#0874F2] text-white rounded-[32px] font-bold text-lg">Withdraw Money</button>
                     </div>
                 </form>
             </div>
