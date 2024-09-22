@@ -190,7 +190,7 @@
 
 
         <!-- get bonus form -->
-        <div class="">
+        <div class="hidden">
             <h2 class="text-lg font-bold">Get Bonus</h2>
             <!-- form -->
             <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
@@ -209,6 +209,55 @@
                 </form>
             </div>
         </div>
+
+        <!-- pay bill form -->
+        <div class="">
+            <h2 class="text-lg font-bold">Pay Bill</h2>
+            <!-- form -->
+            <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Select To Pay</span>
+                        </label>
+                        <select class="input input-bordered bg-[#F4F5F7] rounded-[32px]" required>
+                            <option value="" disabled selected>Select a bank</option>
+                            <option value="bank1">Agrani Bank Limited</option>
+                            <option value="bank2">BRAC Bank</option>
+                            <option value="bank3">Bank Asia PLC</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Bank Account Number</span>
+                        </label>
+                        <input type="text" placeholder="Enter account number" id="pay-now-acount-number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Amount to Pay</span>
+                        </label>
+                        <input id="pay-now-amount-number" type="text" placeholder="Add Amount to pay"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin Number</span>
+                        </label>
+                        <input id="pay-now-pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="pay-now-btn"
+                            class="btn bg-[#0874F2] text-white rounded-[32px] font-bold text-lg">Pay Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
     </section>
 
     <script src="./js/add-money.js"></script>
