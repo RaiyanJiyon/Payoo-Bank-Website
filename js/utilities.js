@@ -1,12 +1,22 @@
-function getInputFieldValueById(id) {
-    const inputValue = document.getElementById(id).value;
-    const inputValueNumber = Number(inputValue);
-    return inputValueNumber;
+function getInputElementValueAsNumber(id) {
+    const inputElementValue = document.getElementById(id).value;
+    const inputValueAsNumber = Number(inputElementValue);
+    return inputValueAsNumber;
 }
 
-function getTextFieldValueById(id) {
-    const inputValue = document.getElementById(id).innerText;
-    const inputValueNumber = Number(inputValue);
-    return inputValueNumber;
+function getTextElementValueAsNumber(id) {
+    const textElementValue = document.getElementById(id).innerText;
+    const textValueAsNumber = Number(textElementValue);
+    return textValueAsNumber;
 }
 
+
+function toggleForm(id) {
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('withdraw-money-form').classList.add('hidden');
+    document.getElementById('transfer-money-form').classList.add('hidden');
+    document.getElementById('bonus-money-form').classList.add('hidden');
+    document.getElementById('pay-bill-form').classList.add('hidden');
+    
+    document.getElementById(id).classList.remove('hidden')
+}
