@@ -1,17 +1,18 @@
-document.getElementById('withdraw-money-btn')
+document.getElementById('pay-now-btn')
     .addEventListener('click', (event) => {
         event.preventDefault();
         console.log('click')
 
-        const withdrawMoney = getInputElementValueAsNumber('withdraw-amount-number');
-        const pinCode = getInputElementValueAsNumber('withdraw-pin');
+        const accountNumber = document.getElementById('pay-now-account-number').value;
+        const amountNumber = getInputElementValueAsNumber('pay-now-amount-number');
+        const pinCode = getInputElementValueAsNumber('pay-now-pin');
         const totalMoneyElement = document.getElementById('count-money');
         const totalMoney = Number(totalMoneyElement.innerText);
-        
-        if (pinCode !== 1 || isNaN(withdrawMoney) || withdrawMoney > totalMoney || withdrawMoney < 0) {
-            alert('Invalid Pin Code or Invalid Money Number');
+
+        if (accountNumber.length !== 11 || pinCode !== 1 || isNaN(amountNumber) || amountNumber > totalMoney || amountNumber < 0) {
+            alert('Invalid User Account or Invalid Pin Code or Invalid Amount');
         } else {
-            const newTotalMoney = totalMoney - withdrawMoney;
+            const newTotalMoney = totalMoney - amountNumber;
             totalMoneyElement.innerText = newTotalMoney;
 
             const transactionForm = document.getElementById('transaction-form');
@@ -23,7 +24,7 @@ document.getElementById('withdraw-money-btn')
                 <i class="fa-solid fa-money-check-dollar"></i>
                 <div class="flex flex-col item-center">
                     <div class="flex-1 px-2 lg:flex-none space-y-2">
-                        <a class="text-lg font-bold text-red-500">Cash Out - $${withdrawMoney} and New Total Amount -  $${newTotalMoney}</a>
+                        <a class="text-lg font-bold text-red-500">Pay Bill - $${amountNumber} and New Total Amount -  $${newTotalMoney}</a>
                         <p id="transaction-time" class="text-sm text-[#08080880]">Today 01:44 AM</p>
                     </div>
                 </div>

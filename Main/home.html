@@ -73,7 +73,7 @@
     <!-- functionalities form section -->
     <section class="bg-[#f4f5f7] mt-10 p-10">
         <!-- add money form -->
-        <div id="add-money-form" class="">
+        <div id="add-money-form" class="hidden">
             <h2 class="text-lg font-bold">Add Money</h2>
             <!-- form -->
             <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
@@ -84,9 +84,9 @@
                         </label>
                         <select class="input input-bordered bg-[#F4F5F7] rounded-[32px]" required>
                             <option value="" disabled selected>Select a bank</option>
-                            <option value="bank1">Bank 1</option>
-                            <option value="bank2">Bank 2</option>
-                            <option value="bank3">Bank 3</option>
+                            <option value="bank1">Agrani Bank Limited</option>
+                            <option value="bank2">BRAC Bank</option>
+                            <option value="bank3">Bank Asia PLC</option>
                         </select>
                     </div>
                     <div class="form-control">
@@ -256,6 +256,15 @@
             </div>
         </div>
 
+        <!-- transaction form -->
+        <div id="transaction-form" class="hidden mt-10">
+            <!-- <h3 class="text-center text-blue-600">No Transactions yet</h3> -->
+            <div class="flex justify-between items-center font-medium">
+                <h2 class="text-lg font-bold">Transaction History</h2>
+                <p class="text-base text-[#08080880]">View All</p>
+            </div>
+        </div>
+
 
 
     </section>
@@ -265,9 +274,10 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/transfer-money.js"></script>
     <script src="./js/get-bonus.js"></script>
-    <script src="./js/pay-now.js"></script>
+    <script src="./js/pay-bill.js"></script>
     <script src="./js/transaction.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/update-time.js"></script>
 </body>
 
 </html>

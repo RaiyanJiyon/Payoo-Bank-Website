@@ -22,3 +22,8 @@ document.getElementById('pay-bill-button')
     .addEventListener('click', () => {
         toggleForm('pay-bill-form')
     });
+
+document.getElementById('transaction-button')
+    .addEventListener('click', () => {
+        toggleForm('transaction-form')
+    });
