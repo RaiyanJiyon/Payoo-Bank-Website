@@ -119,7 +119,7 @@
         </div>
 
         <!-- withdraw money form -->
-        <div class="">
+        <div class="hidden">
             <h2 class="text-lg font-bold">Cash Out</h2>
             <!-- form -->
             <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
@@ -148,6 +148,41 @@
                     <div class="form-control mt-6">
                         <button id="withdraw-money-btn"
                             class="btn bg-[#0874F2] text-white rounded-[32px] font-bold text-lg">Withdraw Money</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- transfer money form -->
+        <div class="">
+            <h2 class="text-lg font-bold">Transfer Money</h2>
+            <!-- form -->
+            <div class="card bg-base-100 w-full shrink-0 shadow-2xl rounded-3xl mt-4">
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">User Account Number</span>
+                        </label>
+                        <input type="text" placeholder="Enter 11 digit number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Amount</span>
+                        </label>
+                        <input id="withdraw-amount-number" type="text" placeholder="Enter amount to transfer"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin Number</span>
+                        </label>
+                        <input id="transfer-pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered bg-[#F4F5F7] rounded-[32px]" autocomplete="off" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="transfer-money-btn"
+                            class="btn bg-[#0874F2] text-white rounded-[32px] font-bold text-lg">Send Now</button>
                     </div>
                 </form>
             </div>
