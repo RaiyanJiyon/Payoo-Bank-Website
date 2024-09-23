@@ -9,5 +9,5 @@ document.getElementById('login-btn')
             window.location.href = "home.html";
         } else {
             alert('Invalid Phone Number or Pin Code');
-        }
-    })
+        };
+    });
